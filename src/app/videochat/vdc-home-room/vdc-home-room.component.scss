@@ -1,0 +1,55 @@
+.vdchomeroom__header{
+    display:grid;
+    grid-template-columns: 10% 20% auto;
+    .header__logo{
+        text-align: left;
+        img{
+            width: 4em;
+        }
+    }
+    .header__date{
+        background-color: #0077c8;
+        display: table;
+        padding: 10px;
+        color: white;
+        overflow: hidden;
+        line-height: 2em;
+        text-align: center;
+    }
+    .header__register{
+        text-align: right;
+        button{
+            background: white;
+            border: none;
+            border-bottom: 1px solid greenyellow;
+            padding: 10px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+        button:hover{
+            border-bottom: 3px solid greenyellow;
+        }
+    }
+}
+.vdchomeroom__body{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 2em;
+    .body__videoChat{
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    .body__videoChat::before{
+        content: "PACIENTE: CAROLINA GONZALEZ";
+        position: absolute;
+        bottom: 1em;
+        background: #0077c8;
+        color: white;
+        border: 1px solid white;
+        border-left: none;
+        padding: 0.5em;
+        border-radius: 0px 3px 3px 0px;
+    }
+}
