@@ -1,10 +1,13 @@
 .vdchomeroom__header{
     display:grid;
     grid-template-columns: 10% 20% auto;
+    @media screen and (max-width: 1050px) {
+        grid-template-columns: auto auto auto;
+    }
     .header__logo{
         text-align: left;
         img{
-            width: 4em;
+            width: 3em;
         }
     }
     .header__date{
@@ -13,7 +16,6 @@
         padding: 10px;
         color: white;
         overflow: hidden;
-        line-height: 2em;
         text-align: center;
     }
     .header__register{
@@ -36,6 +38,9 @@
     display: grid;
     grid-template-columns: 70% 30%;
     padding: 2em;
+    @media screen and (max-width: 1050px) {
+        display: block;
+    }
     .body__video{
         position: relative;
         img{
@@ -45,6 +50,7 @@
     .body__video::before{
         content: "PACIENTE: CAROLINA GONZALEZ";
         position: absolute;
+        font-size: 0.8em;
         bottom: 1em;
         background: #0077c8;
         color: white;
@@ -65,6 +71,9 @@
             border-radius: 0px 0px 5px 5px;
         }
         .chat__input{
+            @media screen and (max-width: 1050px) {
+                position: relative;
+            }
             background-color: white;
             display: grid;
             grid-template-columns: auto auto auto;
@@ -75,7 +84,6 @@
                 width: 100%;
                 border: none;
                 outline: none;
-                font-size: 1.1em;
             }
             button{
                 width: -webkit-fill-available;
@@ -167,9 +175,4 @@
         }
     }
 }
-  
-  
-  /* Messages */
-  
-  
   
