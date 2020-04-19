@@ -1,13 +1,14 @@
 <div class="vdchomeroom__header">
-    <div class="header__logo" >
-        <img src="https://3.bp.blogspot.com/-xzRtweSMii8/VrCtynTUz_I/AAAAAAAAFRM/yXYTMlqCRZ8/s1600/oms-logo-zika.png" alt=""> 
+    <div class="header__logo">
+        <img src="https://3.bp.blogspot.com/-xzRtweSMii8/VrCtynTUz_I/AAAAAAAAFRM/yXYTMlqCRZ8/s1600/oms-logo-zika.png"
+            alt="">
     </div>
     <div class="header__date">
         <span>
             Consulta 10.00
         </span>
     </div>
-    <div class="header__register" >
+    <div class="header__register">
         <button>
             ABRIR REGISTRO CLÍNICO
         </button>
@@ -17,13 +18,45 @@
 
 <div class="vdchomeroom__body">
 
-    <div class="body__videoChat">
+    <div class="body__video">
 
-        <img src="https://i.makeagif.com/media/12-02-2015/JOiME2.gif" alt="" >
+        <img src="https://i.makeagif.com/media/12-02-2015/JOiME2.gif" alt="">
 
     </div>
-    <div>
-        chat
+    <div class="body__chat">
+        <div class="chat__title">
+            <span>CHAT</span>
+        </div>
+        <div class="chat__conversation">
+            <div class="conversation__container">
+                <div class="container__messages">
+                    <div class="message message__sent">
+                        What happened last night?
+                    </div>
+                    <div class="message message__received">
+                        You were drunk.
+                    </div>
+                    <div class="message message__sent">
+                        No I wasn't.
+                    </div>
+                    <div class="message message__received">
+                        You were hugging an old man with a beard screaming "DUMBLEDORE YOU'RE ALIVE!"
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat__input">
+            <div>
+                <input type="file" id="selectedFile" style="display: none;" />
+                <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            </div>
+            <div>
+                <input type="text">
+            </div>
+            <div>
+                <button>Send</button>
+            </div>
+        </div>
     </div>
 
 
