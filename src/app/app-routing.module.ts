@@ -6,7 +6,12 @@ import { VdcPreviewComponent } from './videochat/vdc-preview/vdc-preview.compone
 const routes: Routes = [
   {
     path:'vdcpreview',
-    component:VdcPreviewComponent
+    component: VdcPreviewComponent
+  },
+  {
+    path:'**',
+    pathMatch:'full',
+    redirectTo:'vdcpreview'
   }
 ];
 
