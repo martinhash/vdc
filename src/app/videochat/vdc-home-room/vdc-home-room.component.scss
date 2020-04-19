@@ -1,9 +1,6 @@
 .vdchomeroom__header{
     display:grid;
     grid-template-columns: 10% 20% auto;
-    @media screen and (max-width: 1050px) {
-        grid-template-columns: auto auto auto;
-    }
     .header__logo{
         text-align: left;
         img{
@@ -37,8 +34,7 @@
 .vdchomeroom__body{
     display: grid;
     grid-template-columns: 70% 30%;
-    padding: 2em;
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 950px) {
         display: block;
     }
     .body__video{
@@ -69,7 +65,8 @@
             color: white;
         }
         .chat__input{
-            @media screen and (max-width: 1050px) {
+            
+            @media screen and (max-width: 950px) {
                 position: relative;
             }
             background-color: white;
