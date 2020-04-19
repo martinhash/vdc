@@ -1,6 +1,8 @@
 .vdchomeroom__header{
     display:grid;
     grid-template-columns: 10% auto auto;
+    background: #0077c8;
+    padding: 5px;
     @media screen and (max-width: 600px) {
         display: block;
     }
@@ -8,43 +10,46 @@
         @media screen and (max-width: 600px) {
             text-align: center;
         }
-        text-align: left;
         img{
             @media screen and (max-width: 600px) {
-                width: 7em;
+                width: 6em;
             }
             width: 3.5em;
         }
+        text-align: left;
+        text-align: center;
+        border-right: 1px solid white;
     }
     .header__date{
         @media screen and (max-width: 600px) {
             display: inline-block;
         }
-        background-color: #0077c8;
-        display: table;
-        padding: 10px;
         color: white;
-        overflow: hidden;
-        text-align: center;
+        padding: 1em;
     }
     .header__register{
         @media screen and (max-width: 600px) {
             display: inline-block;
             float: right;
         }
-        text-align: right;
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
         button{
-            background: white;
+            background: none;
             border: none;
-            border-bottom: 1px solid greenyellow;
-            padding: 10px;
             transition-duration: 0.2s;
+            border-bottom: 1px solid white;
             cursor: pointer;
             outline: none;
+            color: white;
+            padding: 0px;
         }
         button:hover{
-            border-bottom: 3px solid greenyellow;
+            border-bottom: 3px solid white;
         }
+        text-align: right;
+        padding: 1em;
     }
 }
 .vdchomeroom__body{
@@ -76,7 +81,7 @@
         background-color: whitesmoke;
         .chat__title{
             text-align: center;
-            background: #0077c8;
+            background: lightseagreen;
             padding: 10px;
             color: white;
         }
@@ -84,18 +89,23 @@
             @media screen and (max-width: 950px) {
                 position: relative;
             }
-            background-color: white;
+            position: absolute;
             display: grid;
             grid-template-columns: auto auto auto;
-            position: absolute;
+            border-top: 1px solid #ddd;
+            background-color: white;
             bottom: 0px;
             width: 100%;
             input{
                 width: 100%;
                 border: none;
                 outline: none;
+                font-size: 1em;
             }
             button{
+                i{
+                    font-size: 1.3em;
+                }
                 width: -webkit-fill-available;
                 border: none;
                 background: none;
