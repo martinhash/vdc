@@ -1,13 +1,22 @@
 .vdchomeroom__header{
     display:grid;
-    grid-template-columns: 10% 20% auto;
+    grid-template-columns: 10% auto auto;
+    @media screen and (max-width: 600px) {
+        display: block;
+    }
     .header__logo{
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
         text-align: left;
         img{
             width: 3em;
         }
     }
     .header__date{
+        @media screen and (max-width: 600px) {
+            display: inline-block;
+        }
         background-color: #0077c8;
         display: table;
         padding: 10px;
@@ -16,6 +25,10 @@
         text-align: center;
     }
     .header__register{
+        @media screen and (max-width: 600px) {
+            display: inline-block;
+            float: right;
+        }
         text-align: right;
         button{
             background: white;
@@ -65,7 +78,6 @@
             color: white;
         }
         .chat__input{
-            
             @media screen and (max-width: 950px) {
                 position: relative;
             }
