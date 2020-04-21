@@ -87,9 +87,6 @@
             color: white;
         }
         .chat__input{
-            @media screen and (max-width: 950px) {
-                position: relative;
-            }
             position: absolute;
             display: grid;
             grid-template-columns: auto auto auto;
@@ -97,6 +94,9 @@
             background-color: white;
             bottom: 0px;
             width: 100%;
+            @media screen and (max-width: 950px) {
+                position: relative;
+            }
             input{
                 width: 100%;
                 border: none;
@@ -138,7 +138,6 @@
                         word-wrap: break-word;
                         z-index: -1;
                       }
-                      
                       .message:after {
                         position: absolute;
                         content: "";
@@ -146,35 +145,28 @@
                         height: 0;
                         border-style: solid;
                       }
-                      
-                      
                       .message:first-child {
                         margin: 16px 0 8px;
                       }
-                      
                       .message__received {
                         background: #fff;
                         border-radius: 0px 5px 5px 5px;
                         float: left;
                       }
-                      
                       .message__received .metadata {
                         padding: 0 0 0 16px;
                       }
-                      
                       .message__received:after {
                         border-width: 0px 10px 10px 0;
                         border-color: transparent #fff transparent transparent;
                         top: 0;
                         left: -10px;
                       }
-                      
                       .message__sent {
                         background: #e1ffc7;
                         border-radius: 5px 0px 5px 5px;
                         float: right;
                       }
-                      
                       .message__sent:after {
                         border-width: 0px 0 10px 10px;
                         border-color: transparent transparent transparent #e1ffc7;
