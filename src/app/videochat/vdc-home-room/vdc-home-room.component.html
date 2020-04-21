@@ -23,41 +23,12 @@
             <span>CHAT</span>
         </div>
         <div class="chat__conversation">
-            <div class="conversation__containerMessages">
-                <div class="containerMessages__time">
-                    12:00
-                </div>
-                <div class="containerMessages__messages">
-                    <div class="message message__sent">
-                        What happened last night?
-                    </div>
-                    <div class="message message__received">
-                        You were drunk.
-                    </div>
-                    <div class="message message__sent">
-                        No I wasn't.
-                    </div>
-                    <div class="message message__received">
-                        You were hugging an old man with a beard screaming "DUMBLEDORE YOU'RE ALIVE!"
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="chat__input">
-            <div>
-                <input type="file" id="selectedFile" style="display: none;" />
-                <button type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();">
-                    <i class="fas fa-paperclip"></i>
-                </button>
-            </div>
-            <div>
-                <input type="text" placeholder="Send a chat message...">
-            </div>
-            <div>
-                <button>
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                </button>
-            </div>
-        </div>
+            <iframe 
+             src="https://sleepy-anchorage-59959.herokuapp.com/course_gui/chat"
+             frameborder="0"
+             id="frame"
+             height="400"
+          ></iframe>
+          </div>
     </div>
 </div>
