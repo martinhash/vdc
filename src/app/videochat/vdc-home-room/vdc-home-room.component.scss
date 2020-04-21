@@ -87,13 +87,13 @@
             color: white;
         }
         .chat__conversation{
+            @media screen and (max-width: 950px) {
+                height: 400px;
+            }
             height: 100%;
-            width: 100%;
+            width: 99%;
            iframe{
-               .chats{
-                display: none !important;
-               }
-            width: 100%;
+            width:99%;
             height: 100%;
            }
         }
