@@ -9,11 +9,12 @@ import { VdcVideoOptionsComponent } from './vdc-video-options/vdc-video-options.
 import { PatientPinComponent } from './patient-pin/patient-pin.component';
 import { PatientFormComponent } from './patient-form/patient-form.component';
 import { PatientWaitComponent } from './patient-wait/patient-wait.component';
+import { InputpinComponent } from './inputpin/inputpin.component';
 
 
 
 @NgModule({
-  declarations: [VdcPreviewComponent, VdcPanelChatComponent, VdcScreenVideoComponent, VdcInputChatComponent, VdcHomeRoomComponent, VdcVideoOptionsComponent, PatientPinComponent, PatientFormComponent, PatientWaitComponent],
+  declarations: [VdcPreviewComponent, VdcPanelChatComponent, VdcScreenVideoComponent, VdcInputChatComponent, VdcHomeRoomComponent, VdcVideoOptionsComponent, PatientPinComponent, PatientFormComponent, PatientWaitComponent, InputpinComponent],
   imports: [
     CommonModule
   ]

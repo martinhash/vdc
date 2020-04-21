@@ -1,0 +1,11 @@
+.window{
+    color:white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    .window__header{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        text-align: left;
+    }
+}

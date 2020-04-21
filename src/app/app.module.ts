@@ -7,7 +7,7 @@ import { VideochatModule } from './videochat/videochat.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
