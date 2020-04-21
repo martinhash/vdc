@@ -6,11 +6,14 @@ import { VdcScreenVideoComponent } from './vdc-screen-video/vdc-screen-video.com
 import { VdcInputChatComponent } from './vdc-input-chat/vdc-input-chat.component';
 import { VdcHomeRoomComponent } from './vdc-home-room/vdc-home-room.component';
 import { VdcVideoOptionsComponent } from './vdc-video-options/vdc-video-options.component';
+import { PatientPinComponent } from './patient-pin/patient-pin.component';
+import { PatientFormComponent } from './patient-form/patient-form.component';
+import { PatientWaitComponent } from './patient-wait/patient-wait.component';
 
 
 
 @NgModule({
-  declarations: [VdcPreviewComponent, VdcPanelChatComponent, VdcScreenVideoComponent, VdcInputChatComponent, VdcHomeRoomComponent, VdcVideoOptionsComponent],
+  declarations: [VdcPreviewComponent, VdcPanelChatComponent, VdcScreenVideoComponent, VdcInputChatComponent, VdcHomeRoomComponent, VdcVideoOptionsComponent, PatientPinComponent, PatientFormComponent, PatientWaitComponent],
   imports: [
     CommonModule
   ]
