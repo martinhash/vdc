@@ -1,40 +1,40 @@
-h4{
-    color: white;
-}
+
 .patient{
-    width: 50%;
-    margin: 0 auto;
-}
-.form{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-    color:white;
-    input{
-        width: 100%;
+  color:white;
+  width: 90%;
+  margin: 1em auto;
+    .patient__header{
+      display: grid;
+      grid-template-columns: auto auto;
+      .header__logo{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: right;
+      }
     }
-    .form__personalinfo{
-        div{
-           padding: 10px;
-           margin: none;
+    .patient__body{
+        text-align: center;
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: 60vh;
+          box-sizing: border-box;
         }
-        .personalinfo__names, .personalinfo__dni,  .personalinfo__phones{
-            display: grid;
-            grid-template-columns: auto auto;
+        .flex-container * {
+          width: calc(50% - 10px);
+          margin: 0 5px;
+          box-sizing: border-box;
         }
-        .personalinfo__dni{
-            display: grid;
-            grid-template-columns: 20% 80%;
+        .flex-container :nth-child(2),
+        .flex-container :nth-child(3) {
+          margin-top: 5px;
         }
-        .personalinfo__country{
-            display: grid;
-            grid-template-columns: auto auto auto;
+        .flex-container :nth-child(3) {
+          flex: 1;
         }
-    }
-    .form__questions{
-        .questions__doctor{
-            display: grid;
-            grid-template-columns: 20% 80%;
+        .flex-container :nth-child(4) {
+          height: 100%;
         }
     }
 }

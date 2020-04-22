@@ -1,69 +1,26 @@
 <div class="patient">
-    <h4>
-        Por favor llene los siguientes datos para el registro
-    clínico del practicante:
-    </h4>
-    <div class="form">
-        <div class="form__personalinfo">
-            <div class="personalinfo__names" >
-                <div>
-                    <input placeholder="Primer Nombre" type="text">
-                </div>
-                <div>
-                    <input placeholder="Segundo Nombre" type="text">
-                </div>
+    <div class="patient__header">
+        <div class="header__title"> Por favor llene los siguientes datos para el registro
+            clínico del practicante:
+        </div>
+        <div class="header__logo">
+            <div class="logo__logo">
+                <img src="../../../assets/logo.png" alt="">
             </div>
-            <div class="personalinfo__lastname">
-                <input placeholder="Apellidos" type="text">
-            </div>
-            <div class="personalinfo__dni">
-                <div>
-                  <select name="" id="">
-                    <option value="" selected>RUT</option>
-                    <option value="">DNI</option>
-                    <option value="">PASSPORT</option>
-                </select>
-                </div>
-                <div>
-                    <input placeholder="Número de identificacion" type="text">
-                </div>
-            </div>
-            <div class="personalinfo__direction" >
-                <input placeholder="Dirección" type="text">
-            </div>
-            <div class="personalinfo__country">
-                <input placeholder="País" type="text">
-                <input placeholder="Estado" type="text">
-                <input placeholder="Ciudad" type="text">
-            </div>
-            <div class="personalinfo__phones">
-                <input placeholder="Teléfono" type="text">
-                <input placeholder="Correo Electrónico" type="text">
+            <div class="logo__motto">
+                <div>Toda la Salud</div>
+                <div>En una plataforma</div>
             </div>
         </div>
-        <div class="form__questions">
-            <div class="questions__why" >
-                <input placeholder="Dirección" type="text">
-            </div>
-            <div class="questions__symptom" >
-                <input placeholder="Dirección" type="text">
-            </div>
-            <div class="questions__doctor">
-                <div class="doctor__know">
-                  <select name="" id="">
-                    <option value="" selected>RUT</option>
-                    <option value="">DNI</option>
-                    <option value="">PASSPORT</option>
-                </select>
-                </div>
-                <div class="doctor__whoreferall">
-                    <input placeholder="Número de identificacion" type="text">
-                </div>
-            </div>
-            <div class="continue">
-                <div> <button>Cancelar</button> </div>
-                <div> <button> Continuar Consulta</button></div>
-            </div>
-        </div>
+    </div>
+    <div class="patient__body">
+        <form class="flex-container">
+            <input type="text" placeholder="Your Name*">
+            <input type="text" placeholder="Your E-Mail Address*">
+            <textarea placeholder="Subject"></textarea>
+            <textarea placeholder="Type your message here..." rows="7"></textarea>
+          </form>
+          <button>Cancelar</button>
+          <button>Continuar</button>
     </div>
 </div>
