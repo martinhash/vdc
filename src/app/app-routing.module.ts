@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { VdcPreviewComponent } from './videochat/vdc-preview/vdc-preview.component';
 import { VdcHomeRoomComponent } from './videochat/vdc-home-room/vdc-home-room.component';
 import { PatientPinComponent } from './videochat/patient-pin/patient-pin.component';
+import { PatientFormComponent } from './videochat/patient-form/patient-form.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path:'patientpin',
     component: PatientPinComponent
+  },
+  {
+    path:'patientform',
+    component: PatientFormComponent
   },
   {
     path:'**',
